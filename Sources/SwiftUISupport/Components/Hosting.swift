@@ -1,5 +1,6 @@
 import SwiftUI
 
+#if canImport(UIKit)
 public struct ViewHost<ContentView: UIView>: UIViewRepresentable {
   
   private let contentView: ContentView
@@ -50,3 +51,4 @@ public struct ViewControllerHost<ContentViewController: UIViewController>:
   
 }
 
+#endif

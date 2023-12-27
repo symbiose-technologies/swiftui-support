@@ -1,5 +1,7 @@
 import SwiftUI
 
+
+#if canImport(UIKit)
 public struct HostingEdge<Content: View>: UIViewControllerRepresentable {
   
   public typealias UIViewControllerType = UIHostingController<_WrapperView>
@@ -80,3 +82,4 @@ public struct VisualEffect: UIViewRepresentable {
   }
 }
 
+#endif

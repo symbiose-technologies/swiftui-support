@@ -1,5 +1,6 @@
 import SwiftUI
 
+#if canImport(UIKit)
 /**
  UILabel backed SwiftUI.View
  */
@@ -26,3 +27,4 @@ public struct UIKitText: UIViewRepresentable {
   }
   
 }
+#endif
