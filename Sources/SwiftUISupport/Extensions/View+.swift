@@ -47,7 +47,7 @@ extension View {
   @ViewBuilder
   @inlinable
   public func _onChange<T: Equatable>(of value: T, perform: @escaping (T) -> Void) -> some View {
-    if #available(iOS 14.0, *) {
+      if #available(iOS 14.0, macOS 11.0, *) {
       self.onChange(of: value, perform: perform)
     } else {
       self.onReceive(Just(value)) { (value) in

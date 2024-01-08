@@ -13,17 +13,20 @@ struct ContentView: View {
     
     NavigationView {
 
-      NavigationLink(destination: {
-        BookChange()
-      }, label: {
-        Text("Change")
-      })
-
-      NavigationLink(destination: {
-        BookSpringBall()
-      }, label: {
-        Text("SpringBall")
-      })
+        VStack {
+            NavigationLink(destination: {
+                BookChange()
+            }, label: {
+                Text("Change")
+            })
+            
+            NavigationLink(destination: {
+                BookSpringBall()
+            }, label: {
+                Text("SpringBall")
+            })
+            
+        }
     }
   }
 }
